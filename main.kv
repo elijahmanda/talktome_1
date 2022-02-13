@@ -1,0 +1,15 @@
+MDScreen :
+    MDBoxLayout:
+        orientation : 'vertical'
+        padding : dp(20)
+        spacing : dp(20)
+        Image : 
+            source : 'assets/codi.jpg'
+        MDFillRoundFlatIconButton :
+            icon : 'speaker'
+            text : 'Speak'
+            pos_hint : {'center_x' : 0.5}
+            size_hint : None, None
+            size : '200dp', '50dp'
+            on_release : app.talk()
+
